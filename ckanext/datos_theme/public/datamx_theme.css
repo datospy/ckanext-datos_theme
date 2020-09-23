@@ -795,3 +795,276 @@ div.sort-datasets a {
     width: 16em;
   }
 }
+
+/* custom css for datos' theme */
+.wrapper{
+    background: #ffffff;
+}
+
+/* navbar when displayed */
+.nav-collapse.collapse.in {
+    height: auto;
+}
+
+.nav-collapse{
+    transition: height 0.35s ease;
+}
+
+/* pagination styles */
+.pagination-wrapper{
+    text-align: center;
+}
+
+.pagination-wrapper ul {
+ display:inline-block;
+ *display:inline;
+ *zoom:1;
+ margin-left:0;
+ margin-bottom:0;
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ border-radius:4px;
+ -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.05);
+ -moz-box-shadow:0 1px 2px rgba(0,0,0,0.05);
+ box-shadow:0 1px 2px rgba(0,0,0,0.05)
+}
+
+.pagination-wrapper ul>li {
+ display:inline
+}
+
+.pagination-wrapper ul>li>a,
+.pagination-wrapper ul>li>span {
+ float:left;
+ padding:4px 12px;
+ line-height:20px;
+ text-decoration:none;
+ background-color:#ffffff;
+ border:1px solid #dddddd;
+ border-left-width:0
+}
+
+.pagination-wrapper ul>li>a:hover,
+.pagination-wrapper ul>li>a:focus,
+.pagination-wrapper ul>.active>a,
+.pagination-wrapper ul>.active>span {
+ background-color:#f5f5f5
+}
+
+.pagination-wrapper ul>.active>a,
+.pagination-wrapper ul>.active>span {
+ color:#999999;
+ cursor:default
+}
+.pagination-wrapper ul>.disabled>span,
+.pagination-wrapper ul>.disabled>a,
+.pagination-wrapper ul>.disabled>a:hover,
+.pagination-wrapper ul>.disabled>a:focus {
+ color:#999999;
+ background-color:transparent;
+ cursor:default
+}
+.pagination-wrapper ul>li:first-child>a,
+.pagination-wrapper ul>li:first-child>span {
+ border-left-width:1px;
+ -webkit-border-top-left-radius:4px;
+ -moz-border-radius-topleft:4px;
+ border-top-left-radius:4px;
+ -webkit-border-bottom-left-radius:4px;
+ -moz-border-radius-bottomleft:4px;
+ border-bottom-left-radius:4px
+}
+.pagination-wrapper ul>li:last-child>a,
+.pagination-wrapper ul>li:last-child>span {
+ -webkit-border-top-right-radius:4px;
+ -moz-border-radius-topright:4px;
+ border-top-right-radius:4px;
+ -webkit-border-bottom-right-radius:4px;
+ -moz-border-radius-bottomright:4px;
+ border-bottom-right-radius:4px
+}
+/* END pagination styles */
+
+/* Styles of Add dataset form */
+.control-full .select2-container {
+    width: 100% !important;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.col-md-6 {
+    width: 45%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6
+, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2
+, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3
+, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5
+, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6
+, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8
+, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9
+, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11
+, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#s2id_field-tags,#s2id_field-license, #s2id_field-organizations, #field-private
+{
+    width: 100% !important;
+}
+
+#field-url, #field-version, #field-author, #field-author-email, #field-maintainer
+, #field-maintainer-email
+{
+    width: 98% !important;
+}
+
+#field-extras-0-key, #field-extras-0-value, #field-extras-1-key
+, #field-extras-1-value, #field-extras-2-key, #field-extras-2-value
+{
+    width: 97% !important;
+}
+
+.form-actions {
+    overflow: auto;
+}
+
+.form-actions{
+    text-align: center;
+}
+
+.form-actions .action-info {
+    width: 100%;
+}
+
+.form-actions .control-required-message {
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.form-actions .btn-primary {
+    margin-top: 10px;
+}
+
+/* END of styles of Add dataset form */
+
+/* Styles for Organization page */
+.organization-page.module-content {
+    height: auto;
+}
+
+/* END of Styles for Organization page */
+
+/* Styles for Add Resource page */
+
+.select2-container{
+    width: 100% !important;
+}
+/* END of styles for Add Resource page */
+
+@media screen and (max-width: 767px) {
+
+    .resource-item .btn-group {
+        position: relative;
+    }
+
+    .toolbar{
+        margin-left: 20px;
+    }
+
+    .search-form .control-order-by {
+        float: none;
+    }
+
+    /* Styles of Add dataset form */
+
+    .stages li .highlight {
+        text-indent: -9999px;
+    }
+
+    .col-md-6{
+        width: 96% !important;
+    }
+
+    #field-extras-0-key, #field-extras-0-value, #field-extras-1-key
+    , #field-extras-1-value, #field-extras-2-key, #field-extras-2-value {
+        width: 90% !important;
+    }
+
+    #s2id_field-license
+    {
+        width: 95% !important;
+    }
+
+    #field-url, #field-version, #field-author, #field-author-email, #field-maintainer, #field-maintainer-email {
+        width: 95% !important;
+    }
+
+    /* END of styles of Add dataset form */
+
+    /* Styles for Organization page */
+
+    .organization-page.module-content {
+        padding: 130px 0px;
+    }
+
+    .organization-info{
+        width: 100%
+    }
+
+    .organization-heading{
+        font-size: 28px;
+    }
+
+    .organization-description {
+        font-size: 18px;
+    }
+    /* END of styles for Organization page */
+
+    /* Styles of edit Organization page */
+    .table-actions .btn-group{
+        white-space: normal;
+
+    }
+    /* END of styles of edit Organization page */
+
+}
+
+@media screen and (max-width: 979px){
+    [role="main"] .primary {
+    width: 100%;
+
+    }
+
+    [role="main"] .secondary {
+        width: 100%;
+        margin-left: 0;
+        float: left;
+    }
+
+}

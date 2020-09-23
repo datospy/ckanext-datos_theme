@@ -16,8 +16,11 @@
       {% endif %}
       <div class="stats">
         <div>
-          <h1>{{organization.packages|length}}</h1>
-          <span>Datasets</span>
+
+          <h1>{{organization.package_count}}</h1>
+          <span>
+            {{  _(ungettext('Dataset', 'Datasets', organization.package_count).format(num=organization.package_count)) }}
+          </span>
         </div>
       </div>
     </div>
