@@ -15,9 +15,11 @@
       {% if c.page.items %}
         <span>Ordenar por:</span>
         {% if c.sort_by_selected != "score desc" %}
+          <a href="#"> asdf {{ c.sort_by_selected }}</a>
           <a class="active" href="{{ url }}?sort=metadata_modified+desc">M&aacute;s Nuevo</a>
           <span>/</span>
           <a href="{{ url }}?sort=score+desc">M&aacute;s Popular</a>
+
         {% else %}
           <a href="{{ url }}?sort=metadata_modified+desc">M&aacute;s Nuevo</a>
           <span>/</span>

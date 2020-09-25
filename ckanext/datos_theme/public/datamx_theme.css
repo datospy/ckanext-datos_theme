@@ -19,7 +19,7 @@ body {
   background-color: #151f31;
   padding: 15px 83px;
   /* max-width: 194px; */
-  max-width: 110px;
+  max-width: 200px;
 }
 
 .navbar-inner {
@@ -741,10 +741,6 @@ div.sort-datasets a {
     padding: 0;
   }
 
-  .homepage .search-form .search-input.search-giant input {
-    width: 300px;
-  }
-
   .site-footer {
     padding: 5px;
   }
@@ -796,7 +792,7 @@ div.sort-datasets a {
   }
 }
 
-/* custom css for datos' theme */
+                            /* custom css for datos' theme */
 .wrapper{
     background: #ffffff;
 }
@@ -987,7 +983,33 @@ label {
 }
 /* END of styles for Add Resource page */
 
+/* Style for all Manage "something" sites" */
+.primary .primary {
+    width: 95%;
+
+}
+
+/* Section to fix invisible elements which cause problems positioning on the screen */
+/* modal to embed the visualization of the resource */
+#embed-bb3e2eab-b00d-49d3-98dd-b4071f6f1980{
+    display: none;
+}
+
+/* End of style for all Manage "something" sites" */
+
 @media screen and (max-width: 767px) {
+
+    /* Styles for View Dataset */
+    .nav-item.active a {
+        width:100%;
+    }
+    /* END of styles for View Dataset */
+
+    /* Styles for Index */
+    .homepage .search-form .search-input.search-giant input {
+        width: auto;
+    }
+    /* END of Styles for Index */
 
     .resource-item .btn-group {
         position: relative;
@@ -1025,7 +1047,17 @@ label {
         width: 95% !important;
     }
 
+    .form-actions {
+        display: inline-grid;
+        width: 100%;
+        grid-row-gap: 20px;
+    }
+
     /* END of styles of Add dataset form */
+
+
+    /* END of styles of View Dataset site */
+
 
     /* Styles for Organization page */
 
@@ -1051,6 +1083,33 @@ label {
         white-space: normal;
 
     }
+
+    div.organization-actions {
+        padding-right: 0px;
+    }
+
+    .pull-right, .page_primary_action{
+        float: none !important;
+        display: grid !important;
+        grid-row-gap: 20px;
+    }
+
+    .checkbox.pull-right {
+        float: right !important;
+        display: block !important;
+
+    }
+
+    table .table-actions, .table-actions .btn-group {
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .primary .primary.col-md-12{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     /* END of styles of edit Organization page */
 
 }
@@ -1065,6 +1124,12 @@ label {
         width: 100%;
         margin-left: 0;
         float: left;
+    }
+
+    /* Styles of View Dataset site */
+    .context-info .image img {
+        display: block;
+        margin: auto;
     }
 
 }
