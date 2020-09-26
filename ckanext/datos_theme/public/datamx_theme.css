@@ -312,7 +312,8 @@ a.button-bordered {
 }
 
 .collaborators div img {
-  margin: 30px 10px 30px 10px;
+  /*margin: 30px 10px 30px 10px; old */
+  margin: 30px 90px 30px 10px;
   height: 70px;
 }
 
@@ -998,6 +999,12 @@ label {
 /* End of style for all Manage "something" sites" */
 
 @media screen and (max-width: 767px) {
+
+    /* Home styles */
+    .collaborators div img {
+        margin: 30px 10px 30px 10px
+    }
+    /* END of Home styles */
 
     /* Styles for View Dataset */
     .nav-item.active a {
