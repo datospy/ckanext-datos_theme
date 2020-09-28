@@ -5473,7 +5473,7 @@ label.checkbox:after {
 input[type=radio],
 input[type=checkbox] {
  position:relative;
- top:7px;
+ /* top:7px; */
  padding:0;
  margin:0
 }

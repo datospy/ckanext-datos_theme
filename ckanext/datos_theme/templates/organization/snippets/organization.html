@@ -9,7 +9,8 @@
       <h1 class="organization-heading">{{ organization.title or organization.name }}</h1>
       {% if organization.description %}
         <p class="organization-description">
-          {{ h.markdown_extract(organization.description, 180) }}
+          {# h.markdown_extract(organization.description, 180) #}
+          {{ organization.description }}
         </p>
       {% else %}
         <p class="empty">{{ _('There is no description for this organization') }}</p>
