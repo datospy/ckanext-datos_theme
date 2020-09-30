@@ -4,7 +4,7 @@
   <div class="footer-links">
     <div class="logo">
       <a href="#">
-        <img src="/datos_abiertos_py_fondo_oscuro-logo.png" width="266" height="44" />
+        <img src="/datos_abiertos_py_oscuro_vertical-logo.png" width="130"  style="margin-bottom:20px" />
       </a>
       {# <h5>2013 - 2017 Codeando M&eacute;xico A.C.</h5> #}
     </div>
@@ -12,13 +12,22 @@
       <ul class="unstyled">
         {# <li><a href="mailto:equipo@codeandomexico.org">{{ _('Contact Us') }}</a></li> #}
         <li><a href="#">{{ _('Contact Us') }}</a></li>
-        <li>Twitter: <a href="https://twitter.com/datospy" target="_blank">@datospy</a></li>
+        <li>
+          <a href="https://twitter.com/datospy" target="_blank">
+            <i class="fa fa-twitter-square" style="font-size:30px"></i>
+          </a>
+          <a href="https://www.facebook.com/DatosPy" target="_blank">
+            <i class="fa fa-facebook-square" style="font-size:30px"></i>
+          </a>
+          <a href="https://github.com/datospy" target="_blank">
+            <i class="fa fa-github-square" style="font-size:30px"></i>
+          </a>
+        </li>
         {# <li><a href="http://paginas.datamx.io/faq/"> FAQ: preguntas frecuentes</a></li> #}
         <li><a href="#"> FAQ: preguntas frecuentes</a></li>
         {# <li><a href="http://paginas.datamx.io/about/">{{ _('About {0}').format(g.site_title) }}</a></li> #}
-        <li><a href="#">{{ _('About {0}').format(g.site_title) }}</a></li>
-        <li><a href="https://github.com/datospy">GitHub</a></li>
-        {% set api_url = 'http://docs.ckan.org/en/{0}/api/index.html'.format(g.ckan_doc_version) %}
+        <li><a href="/about">{{ _('About {0}').format(g.site_title) }}</a></li>
+        {% set api_url = 'http://docs.ckan.org/en/2.9/api/index.html' %}
         <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
         {# <li><a href="http://www.codeandomexico.org/retos">Retos</a></li> #}
       </ul>
