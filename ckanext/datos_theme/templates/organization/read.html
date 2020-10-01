@@ -51,11 +51,11 @@
   {{ c.page.pager(q=c.q) }}
 {% endblock %}
 
-
+{#
 {% block apps_list %}
   <h3>Apps C&iacute;vicas</h3>
   <p>Descubre qui&eacute;nes usan y c&oacute;mo se usan los datos abiertos<br />en Paraguay para mejorar el pa&iacute;s.</p>
-
+#}
   {#
   {% resource "datos_theme/datamx_theme_load_apps.js" %}
 
@@ -64,6 +64,8 @@
     data-module-organization="{{ organization.name }}" >
   </div>
   #}
+{#
 {% endblock %}
+#}
 
 
