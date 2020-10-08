@@ -1,0 +1,24 @@
+code {
+    padding: 2px 4px;
+    color: green;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    font-size: 18px;
+}
+.content {
+    padding: 2em;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.title {
+  text-align: center;
+}
+
+@media (max-width: 1024px){
+  .content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
