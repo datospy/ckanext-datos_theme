@@ -756,6 +756,7 @@ div.sort-datasets a {
 
   .organization-info p {
     width: auto;
+    padding: 10px;
   }
 
   .image-circle {
@@ -1248,6 +1249,10 @@ label {
     }
 
     /* Styles of Add dataset form */
+
+    .stages {
+        margin: -20px -40px 20px;
+    }
 
     .stages li .highlight {
         text-indent: -9999px;
