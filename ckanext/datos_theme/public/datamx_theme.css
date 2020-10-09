@@ -1170,13 +1170,32 @@ label {
 
 }
 
-/* Section to fix invisible elements which cause problems positioning on the screen */
+/* Section to fix/hide invisible elements which cause problems positioning on the screen */
 /* modal to embed the visualization of the resource */
 #embed-bb3e2eab-b00d-49d3-98dd-b4071f6f1980, #embed-708a5d4a-a43a-4927-b82a-b6eac917b2f2{
     display: none;
 }
 
+.dropdown-backdrop{
+    display: none;
+}
+
+/* End of section to fix/hide invisible elements which cause problems positioning on the screen */
+
 /* End of style for all Manage "something" sites" */
+
+/* Styles for login page */
+.control-medium input {
+    width: auto;
+}
+/* End of styles for login page */
+
+/* Admin section */
+.activity .item .date {
+    white-space: normal;
+}
+
+/* Admin section */
 
 @media screen and (max-width: 767px) {
 
@@ -1212,7 +1231,7 @@ label {
 
     /* Styles for Index */
     .homepage .search-form .search-input.search-giant input {
-        width: auto;
+        width: 310px;
     }
     /* END of Styles for Index */
 
