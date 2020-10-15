@@ -18,3 +18,5 @@ Apply these changes to the .ini file.
 ```
 ckan.site_logo = /base/images/datos_abiertos_py_horizontal-logo.jpg
 ```
+
+Note: The static pages app.html, changelog.html, faq.html and retos.html are in ckanext/datos_theme/public
