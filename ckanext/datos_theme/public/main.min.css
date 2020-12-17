@@ -4421,7 +4421,6 @@ a.badge:focus {
 }
 .carousel {
  position:relative;
- margin-bottom:20px;
  line-height:1
 }
 .carousel-inner {
@@ -4504,12 +4503,21 @@ a.badge:focus {
  filter:alpha(opacity=90)
 }
 .carousel-indicators {
- position:absolute;
- top:15px;
- right:15px;
- z-index:5;
- margin:0;
- list-style:none
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
 }
 .carousel-indicators li {
  display:block;

@@ -111,7 +111,6 @@ body {
 }
 
 .homepage .module-search .module-content .heading {
-  /*margin: 10px 0px 10px 0px;*/
   margin: 10px 10px 10px 10px;
   font-size: 2.1em;
   font-weight: 100;
@@ -128,14 +127,16 @@ body {
 }
 
 .homepage .module-search .module-content, .organization-page.module-content {
-  padding: 130px 0px;
-  margin: 0px;
-  height: 250px;
-  background: url(/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(18, 30, 52, 0.8);
+    height: 400px;
+    padding-top: 90px;
+
 }
 
 .homepage .joined-orgs-msg {
@@ -167,7 +168,6 @@ body {
 .module-content {
   margin: 0px;
   background-color: #EEEEEE;
-  padding: 20px 40px;
   border-bottom: 1px solid #BEBEBE;
 }
 
@@ -315,7 +315,6 @@ a.button-bordered {
 }
 
 .collaborators div img {
-  /*margin: 30px 10px 30px 10px; old */
   margin: 30px 90px 30px 10px;
   height: 70px;
 }
@@ -1362,3 +1361,9 @@ label {
     }
 
 }
+
+/* Styles for carousel */
+.item {
+    height: 510px;
+}
+/* End of styles for carousel */

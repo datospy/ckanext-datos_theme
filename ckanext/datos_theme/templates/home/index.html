@@ -1,7 +1,30 @@
 {% ckan_extends %}
 
 {% block primary_content %}
-  {% snippet 'home/snippets/search.html'  %}
+  <div id="myCarousel" class="carousel slide module-search" data-ride="carousel">
+    {% snippet 'home/snippets/search.html'  %}
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active"
+         style="background: url(/carousel-1.jpg) no-repeat center center fixed; background-size: cover;"
+      > </div>
+      <div class="item"
+        style="background: url(/carousel-2.jpg) no-repeat center center fixed; background-size: cover;"
+      >
+      </div>
+      <div class="item"
+        style="background: url(/carousel-3.jpg) no-repeat center center fixed; background-size: cover;"
+      >
+      </div>
+    </div>
+  </div>
   <p class="joined-orgs-msg">Hay <b><a href="/organization">{{ h.get_site_statistics()["organization_count"] }}</a></b> organizaciones de la sociedad civil publicando <br />sus datos abiertos a la comunidad</p>
   <div class="roles">
     <h2>&iquest;Qui&eacute;nes usan datos.org.py?</h2>

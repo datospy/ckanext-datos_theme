@@ -1,7 +1,6 @@
 {% set tags = h.get_facet_items_dict('tags', limit=3) %}
 {% set placeholder = _('Buscar por palabras clave') %}
 
-<div class="module module-search module-narrow module-shallow">
   <form class="module-content search-form" method="get" action="{% url_for controller='dataset', action='search' %}">
     <h3 class="heading">La plataforma c&iacute;vica de <span class="highlighted">datos abiertos</span> de Paraguay</h3>
     <h5>Buscamos organizar los datos abiertos de Paraguay</h5>
@@ -13,4 +12,3 @@
       </button>
     </div>
   </form>
-</div>
