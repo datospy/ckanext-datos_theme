@@ -133,7 +133,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1;
-    background: rgba(18, 30, 52, 0.8);
+    background: none;
     height: 400px;
     padding-top: 90px;
 
@@ -1363,7 +1363,13 @@ label {
 }
 
 /* Styles for carousel */
-.item {
-    height: 510px;
+.carousel-inner .item {
+    height: 700px;
+}
+
+@media only screen and (max-width: 1680px) {
+  .carousel-inner .item {
+    height: 530px;
+  }
 }
 /* End of styles for carousel */

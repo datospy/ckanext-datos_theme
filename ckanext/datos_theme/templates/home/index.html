@@ -1,7 +1,7 @@
 {% ckan_extends %}
 
 {% block primary_content %}
-  <div id="myCarousel" class="carousel slide module-search" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide module-search" data-ride="carousel" data-interval="8000">
     {% snippet 'home/snippets/search.html'  %}
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -13,14 +13,14 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active"
-         style="background: url(/carousel-1.jpg) no-repeat center center fixed; background-size: cover;"
+         style="background: url(/bg1.jpg) no-repeat center center fixed; background-size: cover;"
       > </div>
       <div class="item"
-        style="background: url(/carousel-2.jpg) no-repeat center center fixed; background-size: cover;"
+        style="background: url(/bg2.jpg) no-repeat center center fixed; background-size: cover;"
       >
       </div>
       <div class="item"
-        style="background: url(/carousel-3.jpg) no-repeat center center fixed; background-size: cover;"
+        style="background: url(/bg3.jpg) no-repeat center center fixed; background-size: cover;"
       >
       </div>
     </div>
