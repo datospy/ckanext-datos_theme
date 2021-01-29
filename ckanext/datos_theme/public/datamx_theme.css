@@ -126,8 +126,11 @@ body {
   color: #BDBDBD;
 }
 
-.homepage .module-search .module-content, .organization-page.module-content {
+.module-content.search-form {
     position: absolute;
+}
+
+.homepage .module-search .module-content, .organization-page.module-content {
     top: 0px;
     bottom: 0px;
     right: 0;
@@ -817,8 +820,7 @@ div.sort-datasets a {
 
 .pagination-wrapper ul {
  display:inline-block;
- *display:inline;
- *zoom:1;
+ zoom:1;
  margin-left:0;
  margin-bottom:0;
  -webkit-border-radius:4px;
@@ -883,6 +885,13 @@ div.sort-datasets a {
  -moz-border-radius-bottomright:4px;
  border-bottom-right-radius:4px
 }
+
+.module-content .pagination {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
 /* END pagination styles */
 
 /* Styles of Add dataset form */
